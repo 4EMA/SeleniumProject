@@ -13,7 +13,7 @@ public class CheckingValues {
     public static void main(String[] args) {
         System.setProperty( "webdriver.chrome.driver", "Applications/technostudy/Selenium/ChromeDriver/chromedriver" );
         WebDriver driver = new ChromeDriver();
-        driver.get( "file:///Users/mahiyebarutcu/IdeaProjects/seleniumw/src/day3/resources/form.html" );
+        driver.get( "file:///Users/mahiyebarutcu/IdeaProjects/seleniumw/src/day3/day5.resources/form.html" );
         Map<String, String> testValues = new HashMap<>(  );
         testValues.put( "h1",  "#0000ff");
         testValues.put( "h2",  "#ff0000");

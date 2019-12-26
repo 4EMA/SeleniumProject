@@ -12,7 +12,7 @@ public class ChromeBrowser {
     public static void main(String[] args) {
         System.setProperty( "webdriver.chrome.driver", "/Applications/technostudy/Selenium/ChromeDriver/chromedriver" );
         WebDriver driver = new ChromeDriver();
-        driver.get( "file:Users/mahiyebarutcu/IdeaProjects/seleniumw/src/day3/resources/form.html" );
+        driver.get( "file:Users/mahiyebarutcu/IdeaProjects/seleniumw/src/day3/day5.resources/form.html" );
         WebElement text = driver.findElement( By.name( "text" ) );
         text.sendKeys( "This is my text" );
         WebElement password = driver.findElement( By.name( "password" ) );
