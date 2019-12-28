@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <!--
+        give your div some styles, like background color, width and center it in the middle of the screen
+        give your form inputs some styles, like font, margins and color of text
+    -->
+
+    <style>
+        body {
+        text-align: center;
+        }
+        h1{
+        color:navy
+        }
+        p {
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+        }
+    </style>
+
+</head>
+
+
+<body bgcolor = "#ffe6ff">
+<!--
+   Create a form with:
+    * 1 text input called "username"
+    * 2 password inputs, called "password" and "password repeat"
+    * 1 text area called "address"
+    * 2 radio buttons with values "male" and "female" and called "sex"
+    * 1 dropdown with selections: free, basic, enterprise. Call this dropdown "plan"
+    * 1 checkbox with name "agreement" and with text "I agree to terms and conditions"
+    * 1 submit image button that uses "submit.png"
+   Put your form inside a div
+-->
+<h1> <i>
+    Please fill in the form
+</i></h1>
+<form>
+    <p name="usernameP">
+        Username:  <br><input name="username" required><br>
+    </p>
+
+    <p name="passwordP">
+        Password:  <br><input name="password" type="password" required><br>
+    </p>
+
+    <p name="passwordRptP">
+        Repeat Password:  <br><input name="passwordRpt" type="password" required><br>
+    </p>
+
+    <p name="addressP">
+        Address:  <br><textarea name="address" cols="50" rows="5" required></textarea><br>
+    </p>
+
+    <p>
+        Gender:
+        <br><input type="radio" name="sex" id="female">Female</input> <br>
+        <input type="radio" name="sex" id="male">Male</input><br>
+    </p>
+
+    <p>
+        Plan:
+        <select name="plan" required>
+            <option name="free">Free</option>
+            <option name="basic">Basic</option>
+            <option name="enterprise">Enterprise</option>
+        </select>
+    </p>
+
+    <p>
+        I agree to terms and conditions <input type="checkbox" name="agreement" required>
+    </p>
+
+    <p>
+        <input type="image" src=submit.png width="150" height="35" name="submit" alt="Submit" />
+    </p>
+
+</form>
+
+</body>
+</html>
